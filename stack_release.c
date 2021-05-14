@@ -7,11 +7,11 @@
  */
 void free_stack(stack_t *stack)
 {
-  stack_t *fly = stack;
+	stack_t *fly = stack;
 
-  if (fly != NULL)
-    {
-      free_stack(fly->next);
-      free(fly);
-    }
+	if (fly != NULL)
+	{
+		free_stack(fly->next);
+		free(fly);
+	}
 }

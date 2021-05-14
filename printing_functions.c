@@ -11,12 +11,12 @@
  */
 void pint(stack_t **stack, unsigned int line_number)
 {
-  if (!*stack || !stack)
-    {
-      dprintf(STDERR_FILENO, "L%d: can't pint, stack empty\n", line_number);
-      exit(EXIT_FAILURE);
-    }
-  dprintf(STDOUT_FILENO, "%d\n", (*stack)->n);
+	if (!*stack || !stack)
+	{
+		dprintf(STDERR_FILENO, "L%d: can't pint, stack empty\n", line_number);
+		exit(EXIT_FAILURE);
+	}
+	dprintf(STDOUT_FILENO, "%d\n", (*stack)->n);
 }
 
 /**
@@ -32,12 +32,12 @@ void pint(stack_t **stack, unsigned int line_number)
  */
 void pall(stack_t **stack, unsigned int line_number)
 {
-  stack_t *node = *stack;
-  (void)line_number;
+	stack_t *node = *stack;
+	(void)line_number;
 
-  while (node != NULL)
-    {
-      dprintf(STDOUT_FILENO, "%d\n", node->n);
-      node = node->next;
-    }
+	while (node != NULL)
+	{
+		dprintf(STDOUT_FILENO, "%d\n", node->n);
+		node = node->next;
+	}
 }

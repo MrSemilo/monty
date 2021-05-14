@@ -69,7 +69,7 @@ typedef struct instruction_s
 * nop : does nothing
 
 ### Compilation
-You 
+You
 ```
 $ gcc -Wall -Werror -Wextra -pedantic *.c -o monty
 ```
@@ -90,22 +90,22 @@ julien@ubuntu:~/monty$
 ```
 * **pint**
 ```
-julien@ubuntu:~/monty$ cat bytecodes/06.m 
+julien@ubuntu:~/monty$ cat bytecodes/06.m
 push 1
 pint
 push 2
 pint
 push 3
 pint
-julien@ubuntu:~/monty$ ./monty bytecodes/06.m 
+julien@ubuntu:~/monty$ ./monty bytecodes/06.m
 1
 2
 3
-julien@ubuntu:~/monty$ 
+julien@ubuntu:~/monty$
 ```
 * **pop**
 ```
-julien@ubuntu:~/monty$ cat bytecodes/07.m 
+julien@ubuntu:~/monty$ cat bytecodes/07.m
 push 1
 push 2
 push 3
@@ -116,36 +116,36 @@ pop
 pall
 pop
 pall
-julien@ubuntu:~/monty$ ./monty bytecodes/07.m 
+julien@ubuntu:~/monty$ ./monty bytecodes/07.m
 3
 2
 1
 2
 1
 1
-julien@ubuntu:~/monty$ 
+julien@ubuntu:~/monty$
 ```
 * **swap**
 ```
-julien@ubuntu:~/monty$ cat bytecodes/09.m 
+julien@ubuntu:~/monty$ cat bytecodes/09.m
 push 1
 push 2
 push 3
 pall
 swap
 pall
-julien@ubuntu:~/monty$ ./monty bytecodes/09.m 
+julien@ubuntu:~/monty$ ./monty bytecodes/09.m
 3
 2
 1
 2
 3
 1
-julien@ubuntu:~/monty$ 
+julien@ubuntu:~/monty$
 ```
 * **add**
 ```
-julien@ubuntu:~/monty$ cat bytecodes/12.m 
+julien@ubuntu:~/monty$ cat bytecodes/12.m
 push 1
 push 2
 push 3
@@ -153,7 +153,7 @@ pall
 add
 pall
 
-julien@ubuntu:~/monty$ ./monty bytecodes/12.m 
+julien@ubuntu:~/monty$ ./monty bytecodes/12.m
 3
 2
 1
